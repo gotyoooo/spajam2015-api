@@ -1,8 +1,8 @@
 <?php
-require_once 'common.inc';
+require_once 'lib/common.inc';
 
 $smtp_option = array(
     'From' => $mailFrom,
     'To' => array($mailTo)
 );
-$obj  = new SmtpSender('localhost', $smtp_option);
+$smtp  = new SmtpSender(SMTP_SERVER, $smtp_option);

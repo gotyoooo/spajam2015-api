@@ -4,4 +4,4 @@ function __autoload($class_name) {
     $class_file = $lib_path . $class_name . ".php";
     require_once $class_file;
 }
-
+require_once 'conf/common_config.php';
