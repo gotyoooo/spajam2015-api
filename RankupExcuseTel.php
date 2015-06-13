@@ -11,6 +11,6 @@ $pdo = db_connect();
 $data_excuse_tel_rank_request_num = db_select_query($pdo, $sql, $ret);
 $request_num = $data_excuse_tel_rank_request_num[0]['request_num'] + 1;
 $ret2 = array($excuse_tel_id, $request_num);
-db_update_query($pdo, $sql3, $ret3);
+db_update_query($pdo, $sql2, $ret2);
 $pdo = null;
 header("Access-Control-Allow-Origin:*");
