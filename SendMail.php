@@ -2,7 +2,7 @@
 require_once 'lib/common.inc';
 
 $mailFrom = "hoge@gmail.com";
-$mailTo = "lss.ken8927@gmail.com";
+$mailTo = "lss.ken.gotyoooo@ezweb.ne.jp";
 $subject = "test";
 $message = "hoge";
 
