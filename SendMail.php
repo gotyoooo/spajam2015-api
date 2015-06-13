@@ -3,7 +3,7 @@ require_once 'lib/common.inc';
 
 $mailFrom = "hoge@gmail.com";
 $mailTo = "lss.ken8927@gmail.com";
-$subject = "test"
+$subject = "test";
 $message = "hoge";
 $smtp_option = array(
     'From' => $mailFrom,
