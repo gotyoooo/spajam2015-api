@@ -17,8 +17,8 @@ $return = array();
 $return['user_id'] = $new_user_id;
 
 //JSONにエンコード
-$json = json_encode( $return );
+$json = json_encode($return);
 
 //JSON形式で吐き出す
-header( 'Content-Type: text/javascript; charset=utf-8' );
+header( 'Content-Type: text/json; charset=utf-8' );
 echo $json;
