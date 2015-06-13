@@ -11,4 +11,5 @@ $json = json_encode($data_excuse_tel);
 
 //JSON形式で吐き出す
 header( 'Content-Type: text/json; charset=utf-8' );
+header("Access-Control-Allow-Origin:*");
 echo $json;

@@ -1,14 +1,14 @@
 <?php
 require_once 'lib/common.inc';
 
-$mailFrom = "hoge@gmail.com";
-$mailTo = "lss.ken.gotyoooo@ezweb.ne.jp";
+$mail_from = "hoge@gmail.com";
+$mail_to = "lss.ken.gotyoooo@ezweb.ne.jp";
 $subject = "test";
 $message = "hoge";
 
 $smtp_option = array(
-    'From' => $mailFrom,
-    'To' => array($mailTo)
+    'From' => $mail_from,
+    'To' => array($mail_to)
 );
 $smtp  = new SmtpSender(SMTP_SERVER, $smtp_option);
 $smtp->setSubject($subject);
