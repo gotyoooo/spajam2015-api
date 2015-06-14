@@ -1,10 +1,10 @@
 <?php
 require_once 'lib/common.inc';
 
-$mail_from = "hoge@gmail.com";
-$mail_to = "lss.ken.gotyoooo@ezweb.ne.jp";
-$subject = "test";
-$message = "hoge";
+$mail_from = $_GET['mail_from'];
+$mail_to   = $_GET['mail_to'];
+$subject   = $_GET['subject'];
+$message   = $_GET['message'];
 
 $smtp_option = array(
     'From' => $mail_from,
