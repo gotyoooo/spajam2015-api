@@ -5,8 +5,8 @@ $user_id          = $_GET['user_id'];
 $excuse_tel_name  = $_GET['excuse_tel_name'];
 $excuse_tel_group = $_GET['excuse_tel_group'];
 
-$sql = "INSERT INTO excuse_tel(user_id,excuse_tel_name,excuse_tel_group) VALUES(?,'?','?');";
-$ret = array($user_id, $excuse_tel_name, $excuse_tel_group);
+$sql = "INSERT INTO excuse_tel(user_id,excuse_tel_name,excuse_tel_group) VALUES(?,?,?);";
+$ret = array((int)$user_id, $excuse_tel_name, $excuse_tel_group);
 $sql2 = "SELECT max(excuse_tel_id) as max_excuse_tel_id FROM excuse_tel WHERE user_id = ?";
 $ret2 = array($user_id);
 $sql3 = "INSERT INTO excuse_tel_rank(excuse_tel_id, request_num) VALUES(?, ?);";

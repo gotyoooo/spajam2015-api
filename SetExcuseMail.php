@@ -5,7 +5,7 @@ $user_id          = $_GET['user_id'];
 $excuse_mail_subject  = $_GET['excuse_mail_subject'];
 $excuse_mail_message = $_GET['excuse_mail_message'];
 
-$sql = "INSERT INTO excuse_mail(user_id,excuse_mail_subject,excuse_mail_message) VALUES(?,'?','?');";
+$sql = "INSERT INTO excuse_mail(user_id,excuse_mail_subject,excuse_mail_message) VALUES(?,?,?);";
 $ret = array($user_id, $excuse_mail_subject, $excuse_mail_message);
 $sql2 = "SELECT max(excuse_mail_id) as max_excuse_mail_id FROM excuse_mail WHERE user_id = ?";
 $ret2 = array($user_id);
