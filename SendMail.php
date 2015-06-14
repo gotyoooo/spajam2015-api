@@ -3,8 +3,8 @@ require_once 'lib/common.inc';
 
 $mail_from = $_GET['mail_from'];
 $mail_to   = $_GET['mail_to'];
-$subject   = $_GET['subject'];
-$message   = $_GET['message'];
+$subject   = htmlspecialchars_decode($_GET['subject']);
+$message   = htmlspecialchars_decode($_GET['message']);
 
 $smtp_option = array(
     'From' => $mail_from,
